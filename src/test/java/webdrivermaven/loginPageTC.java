@@ -22,6 +22,7 @@ public class loginPageTC {
 		
 		driver.get("https://accounts.google.com/ServiceLogin/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=googlemail&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin");
 		driver.findElement(By.id("identifierId")).sendKeys("sudheer1234@gmail.com");
+		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/div/button")).click();
 
 	}
 	
